@@ -1,4 +1,4 @@
-function house(number) { 
+function time(number) { 
  let count = 0; 
  let result = ""; 
  if (number < 0) { 
@@ -20,4 +20,4 @@ function house(number) {
  } 
  console.log(result); 
 } 
-house(250);
+time(200);
