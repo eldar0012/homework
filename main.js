@@ -1,15 +1,23 @@
-let numberOfFilms=+prompt(`Сколько фильмов вы уже посмотрели?`);
-let personalMovieDB = {
-	
-	count: numberOfFilms,
-	movies: {},
-	actors:{},
-	genders: [],
-	private: false
-};
-let a=prompt(`Один из последных просмотрренных фильмов ?`),
-      b=prompt(`На сколько оцените его ?`);
-	  
-	  personalMovieDB.movies[a]=b;
-	  
-	  console.log(personalMovieDB);
+function house(number) { 
+ let count = 0; 
+ let result = ""; 
+ if (number < 0) { 
+ console.log("Ошибка, проверьте данные"); 
+ } 
+ for (let i = 0; i <= number; i++) { 
+ if (Number.isInteger(number) == false) { 
+ console.log("Ошибка, проверьте данные"); 
+ break; 
+ } 
+ if (number >= 60) { 
+ count++; 
+ number -= 60; 
+ result = `Это ${count} часов и ${number} минут`; 
+ } 
+ if (number < 60 || number == 0) { 
+ result = `Это ${count} часов и ${number} минут`; 
+ } 
+ } 
+ console.log(result); 
+} 
+house(250);
